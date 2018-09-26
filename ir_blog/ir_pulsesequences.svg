@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="ir_pulsesequence.svg"
+   sodipodi:docname="ir_pulsesequences.svg"
    inkscape:version="0.91 r13725"
    version="1.1"
    id="svg4710"
@@ -33,8 +33,8 @@
      inkscape:current-layer="g5422"
      inkscape:document-units="px"
      inkscape:cy="55.25053"
-     inkscape:cx="207.11102"
-     inkscape:zoom="0.46809458"
+     inkscape:cx="71.302172"
+     inkscape:zoom="1.4247736"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -161,7 +161,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -415,12 +415,12 @@
          sodipodi:linespacing="125%"
          id="text6244"
          y="2.3191099"
-         x="631.37567"
+         x="632.56555"
          style="font-style:normal;font-weight:normal;font-size:92.68981171px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.44143295px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '"
            y="2.3191099"
-           x="631.37567"
+           x="632.56555"
            id="tspan6246"
            sodipodi:role="line">180°</tspan></text>
       <text
@@ -446,6 +446,18 @@
            id="tspan7287"
            x="455.97702"
            y="262.39639" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:92.68981171px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="1199.8275"
+         y="2.3191099"
+         id="text4246"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4248"
+           x="1199.8275"
+           y="2.3191099"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.44143295px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">180°</tspan></text>
     </g>
   </g>
 </svg>
