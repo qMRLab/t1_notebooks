@@ -49,6 +49,9 @@ RUN cd $HOME/work;\
     git clone --single-branch -b irblog https://github.com/qMRLab/t1_notebooks.git;                    \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;    \
+    cd qMRLab;\
+    git checkout 6a552eb10ed24e843c0e9e9f53606a66109ee876;\
+    cd ..;\
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
                       startup; \
