@@ -46,12 +46,9 @@ RUN apt-get update && \
 RUN cd $HOME/work;\
     pip install octave_kernel sos sos-notebook scipy plotly dash dash_core_components dash_html_components dash_dangerously_set_inner_html dash-renderer flask==0.12.2;\
     python -m sos_notebook.install;\
-    git clone https://github.com/qMRLab/t1_notebooks.git;                      \
+    git clone --single-branch -b blog_vfa https://github.com/qMRLab/t1_notebooks.git;\
     cd t1_notebooks;\
-    git clone https://github.com/neuropoly/qMRLab.git;    \
-    cd qMRLab;\
-    git checkout 6a552eb10ed24e843c0e9e9f53606a66109ee876;\
-    cd ..;\
+    git clone --single-branch -b vfa_improvements https://github.com/neuropoly/qMRLab.git;\
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
                       startup; \
