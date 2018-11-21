@@ -4,8 +4,7 @@ USER root
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        apt-utils \
-        build-essential=12.4ubuntu1 \
+        build-essential\
         emacs=47.0 \
         git=1:2.17.1-1ubuntu0.3 \
         inkscape=0.92.3-1 \
