@@ -34,7 +34,7 @@ RUN apt-get update && \
         octave-statistics=1.3.0-4 \
         octave-optim=1.5.2-4 \
         octave-image=2.6.2-5 \
-        python3-dev=3.6.5-3ubuntu1 \
+        python3-dev>=3.6.5-3ubuntu1 \
         ttf-dejavu=2.37-1 && \
     apt-get clean && \
     apt-get autoremove && \
