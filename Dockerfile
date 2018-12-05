@@ -42,8 +42,8 @@ RUN apt-get update && \
 
 RUN cd $HOME/work;\
     pip install octave_kernel \
-                sos == 0.17.5\
-                sos-notebook == 0.17.2 \
+                sos \
+                sos-notebook==0.17.2 \
                 scipy \
                 plotly \
                 dash \
