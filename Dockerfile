@@ -53,12 +53,9 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/qMRLab/t1_notebooks.git;                             \
+    git clone --single-branch -b blog_mp2rage https://github.com/qMRLab/t1_notebooks.git; \
     cd t1_notebooks;\
-    git clone https://github.com/neuropoly/qMRLab.git;   \
-    cd qMRLab; \
-    git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
-    cd ..; \
+    git clone --single-branch -b blog_mp2rage https://github.com/neuropoly/qMRLab.git; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
                       startup; \
