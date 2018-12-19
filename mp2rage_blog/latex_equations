@@ -1,0 +1,14 @@
+222,346/38,423
+
+S_\mathit{MP2RAGE} = \text{real}\left (  \frac{S_\mathit{GRE_\mathit{TI_1}}^* S_\mathit{GRE_\mathit{TI_2}}}{\left |S_\mathit{GRE_\mathit{TI_1}}\right |^2+ \left |S_\mathit{GRE_\mathit{TI_2}}\right |^2} \right )
+
+S_\mathit{MP2RAGE} =  \frac{S_\mathit{GRE_\mathit{TI_1}} S_\mathit{GRE_\mathit{TI_2}}}{S_\mathit{GRE_\mathit{TI_1}}^2+ S_\mathit{GRE_\mathit{TI_2}}^2}
+
+S_\mathit{GRE_\mathit{TI_1}} = B_1^-e^{-\mathrm{TE}/T_2^*}M_0\sin(\theta_1)\left [ \left ( \frac{-\mathrm{eff} m_{z,ss}}{M_0}\mathrm{EA}+\left ( 1-\mathrm{EA} \right ) \right )\left ( \cos(\theta_1)\mathrm{ER} \right )^{n/2-1} + \left ( 1-\mathrm{ER}\right )\frac{1-\left ( \cos(\theta_1)\mathrm{ER} \right )^{n/2-1}}{1-\cos(\theta_1)\mathrm{ER}}  \right ]
+
+S_\mathit{GRE_\mathit{TI_2}} = B_1^-e^{-\mathrm{TE}/T_2^*}M_0\sin(\theta_2)\left [ \frac{\frac{m_{z,ss}}{M_0}-\left ( 1-\mathrm{EC} \right )}{\mathrm{EC} \left ( \cos(\theta_2)\mathrm{ER} \right )^{n/2}} -\left ( 1 - \mathrm{ER} \right ) \frac{\left ( \cos(\theta_2)\mathrm{ER} \right )^{-n/2} -1}{1-\cos(\theta_2)\mathrm{ER}} \right ]
+
+m_{z,ss} = \frac{M_0\left [ \beta \left ( \cos(\theta_2)\mathrm{ER} \right )^n+ \left ( 1-\mathrm{ER} \right ) \frac{1-\left ( \cos(\theta_2) \mathrm{ER} \right )^n}{1-\cos(\theta_2)\mathrm{ER}} \right ]\mathrm{EC+\left ( 1-\mathrm{EC} \right )}}{1+\mathrm{eff}\left ( \cos(\theta_1) \cos(\theta_2) \right )^ne^{-TR_{\mathrm{MP2RAGE}}/T_1}}
+
+\beta = \left ( \left ( 1-\mathrm{EA} \right ) \left ( \cos(\theta_1) \mathrm{ER} \right )^n+\left ( 1-\mathrm{ER} \right )\frac{1-\left ( \cos(\theta_1)\mathrm{ER} \right )^n}{1-\cos(\theta_1)\mathrm{ER}} \right )\mathrm{EB}+\left ( 1-\mathrm{EB} \right )
+
