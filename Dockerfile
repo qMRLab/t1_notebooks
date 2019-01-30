@@ -47,6 +47,10 @@ RUN cd $HOME/work;\
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
                 sos-matlab==0.9.12.1 \
+                sos-ruby==0.9.15.0 \
+                sos-sas==0.9.12.3 \
+                sos-julia==0.9.12.1 \
+                sos-javascript==0.9.12.2 \
                 scipy \
                 plotly \
                 dash \
