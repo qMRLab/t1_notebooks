@@ -42,8 +42,11 @@ RUN apt-get update && \
 
 RUN cd $HOME/work;\
     pip install octave_kernel \
-                sos==0.18.4 \
-                sos-notebook==0.18.3 \
+                sos \
+                sos-notebook \
+                sos-matlab \
+                sos-python \
+                matplotlib \
                 scipy \
                 plotly \
                 dash \
