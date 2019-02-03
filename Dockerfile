@@ -74,3 +74,7 @@ RUN cd $HOME/work;\
 WORKDIR $HOME/work/t1_notebooks
 
 USER $NB_UID
+
+RUN jupyter trust ir_blog/InversionRecovery.ipynb
+
+RUN jupyter trust vfa_blog/VariableFlipAngle.ipynb
