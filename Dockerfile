@@ -61,7 +61,7 @@ RUN cd $HOME/work;\
                 flask \
                 jupyterlab>=0.35.4; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b jupyterlab https://github.com/qMRLab/t1_notebooks.git;                              \
+    git clone --single-branch -b jupyterlab https://github.com/qMRLab/t1_notebooks.git;                               \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
@@ -77,6 +77,7 @@ WORKDIR $HOME/work/t1_notebooks
 USER $NB_UID
 
 RUN jupyter labextension install @jupyterlab/plotly-extension;  \
+    jupyter labextension install @jupyterlab/celltags; \
     jupyter labextension install jupyterlab-sos 
 
 RUN jupyter trust ir_blog/InversionRecovery.ipynb; \
