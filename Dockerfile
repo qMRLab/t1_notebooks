@@ -61,7 +61,7 @@ RUN cd $HOME/work;\
                 flask \
                 ipywidgets; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b blog_mp2rage https://github.com/qMRLab/t1_notebooks.git;    \
+    git clone --single-branch -b blog_mp2rage https://github.com/qMRLab/t1_notebooks.git;     \
     cd t1_notebooks;\
     git clone --single-branch -b blog_mp2rage https://github.com/neuropoly/qMRLab.git;  \
     chmod -R 777 $HOME/work/t1_notebooks; \
@@ -72,5 +72,7 @@ RUN cd $HOME/work;\
 WORKDIR $HOME/work/t1_notebooks
 
 USER $NB_UID
+
+RUN jupyter labextension install @jupyterlab/plotly-extension
 
 RUN jupyter trust mp2rage_blog/MP2RAGE.ipynb
