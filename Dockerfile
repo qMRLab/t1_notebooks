@@ -74,3 +74,8 @@ RUN cd $HOME/work;\
 WORKDIR $HOME/work/t1_notebooks
 
 USER $NB_UID
+
+RUN jupyter labextension install @jupyterlab/plotly-extension
+
+RUN jupyter trust ir_blog/InversionRecovery.ipynb; \
+    jupyter trust vfa_blog/VariableFlipAngle.ipynb;
