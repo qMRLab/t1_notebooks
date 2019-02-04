@@ -61,7 +61,7 @@ RUN cd $HOME/work;\
                 flask \
                 jupyterlab>=0.35.4; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b jupyterlab https://github.com/qMRLab/t1_notebooks.git;                               \
+    git clone --single-branch -b jupyterlab https://github.com/qMRLab/t1_notebooks.git;                                \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
