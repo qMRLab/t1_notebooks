@@ -58,7 +58,8 @@ RUN cd $HOME/work;\
                 dash_html_components \
                 dash_dangerously_set_inner_html \
                 dash-renderer \
-                flask; \
+                flask \
+                jupyterlab>=0.35.4; \
     python -m sos_notebook.install;\
     git clone --single-branch -b jupyterlab https://github.com/qMRLab/t1_notebooks.git;                              \
     cd t1_notebooks;\
@@ -75,8 +76,8 @@ WORKDIR $HOME/work/t1_notebooks
 
 USER $NB_UID
 
-RUN jupyter labextension install @jupyterlab/plotly-extension; \
-    jupyter labextension install jupyterlab-sos
+RUN jupyter labextension install @jupyterlab/plotly-extension;  \
+    jupyter labextension install jupyterlab-sos 
 
 RUN jupyter trust ir_blog/InversionRecovery.ipynb; \
     jupyter trust vfa_blog/VariableFlipAngle.ipynb;
