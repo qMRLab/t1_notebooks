@@ -60,7 +60,7 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b blog_mp2rage https://github.com/qMRLab/t1_notebooks.git;          \
+    git clone --single-branch -b blog_mp2rage https://github.com/qMRLab/t1_notebooks.git;           \
     cd t1_notebooks;\
     git clone --single-branch -b blog_mp2rage https://github.com/neuropoly/qMRLab.git;  \
     chmod -R 777 $HOME/work/t1_notebooks; \
