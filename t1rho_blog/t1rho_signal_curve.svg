@@ -13,8 +13,8 @@
    inkscape:export-xdpi="300"
    inkscape:export-filename="/Users/mathieuboudreau/neuropoly/book/figures/t1rho_signal_curve_2.png"
    width="186.61513mm"
-   height="56.994846mm"
-   viewBox="0 0 661.23471 201.95024"
+   height="56.99485mm"
+   viewBox="0 0 661.23471 201.95025"
    id="svg4710"
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="350.37046"
-     inkscape:cy="82.07537"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="134.0901"
+     inkscape:cy="105.85786"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -259,7 +259,14 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Calque 1"
-     transform="translate(0.09931564,-210.41591)">
+     transform="translate(0.09931564,-210.4159)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.6875;stroke-linecap:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1016"
+       width="661.23474"
+       height="201.95026"
+       x="-0.099336162"
+       y="210.41589" />
     <g
        id="g5212"
        transform="matrix(0.50241324,0,0,1,676.84212,4.0615136)">
