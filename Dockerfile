@@ -43,6 +43,7 @@ RUN apt-get update && \
 RUN cd $HOME/work;\
     pip install octave_kernel \
                 sos==0.17.7 \
+                sos-r \
                 sos-notebook==0.17.2 \
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
@@ -52,7 +53,7 @@ RUN cd $HOME/work;\
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
                 scipy \
-                plotly \
+                plotly==3.10.0 \
                 dash \
                 dash_core_components \
                 dash_html_components \
