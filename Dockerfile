@@ -42,9 +42,9 @@ RUN apt-get update && \
 
 RUN cd $HOME/work;\
     pip install octave_kernel \
-                sos==0.17.7 \
+                sos==0.19.8 \
                 sos-r \
-                sos-notebook==0.17.2 \
+                sos-notebook==0.19.4 \
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
                 sos-matlab==0.9.12.1 \
