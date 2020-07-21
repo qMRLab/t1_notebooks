@@ -66,7 +66,7 @@ RUN cd $HOME/work;\
     cd t1_notebooks;\
     git clone -b update_2.5.0 https://github.com/qMRLab/qMRLab.git;   \
     cd qMRLab; \
-    git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
+    git checkout b69168f02f0680471a0c5590114752c037c9b041; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
