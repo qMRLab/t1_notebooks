@@ -53,6 +53,7 @@ RUN cd $HOME/work;\
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
                 scipy \
+                matplotlib \
                 plotly==3.10.0 \
                 dash \
                 dash_core_components \
