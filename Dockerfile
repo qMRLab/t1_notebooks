@@ -61,9 +61,9 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/jvelazquez-reyes/t1_notebooks.git;  \
+    git clone -b blog_afi https://github.com/jvelazquez-reyes/t1_notebooks.git;  \
     cd t1_notebooks;\
-    git clone https://github.com/qMRLab/qMRLab.git;   \
+    git clone -b update_2.5.0 https://github.com/qMRLab/qMRLab.git;   \
     cd qMRLab; \
     git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
     cd ..; \
