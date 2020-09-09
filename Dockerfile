@@ -42,8 +42,9 @@ RUN apt-get update && \
 
 RUN cd $HOME/work;\
     pip install octave_kernel \
-                sos==0.17.7 \
-                sos-notebook==0.17.2 \
+                sos==0.19.8 \
+                sos-r \
+                sos-notebook==0.19.4 \
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
                 sos-matlab==0.9.12.1 \
@@ -52,7 +53,8 @@ RUN cd $HOME/work;\
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
                 scipy \
-                plotly \
+                matplotlib \
+                plotly==3.10.0 \
                 dash \
                 dash_core_components \
                 dash_html_components \
@@ -60,11 +62,11 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/qMRLab/t1_notebooks.git;                             \
+    git clone -b blog_afi https://github.com/jvelazquez-reyes/t1_notebooks.git;  \
     cd t1_notebooks;\
-    git clone https://github.com/neuropoly/qMRLab.git;   \
+    git clone -b update_2.5.0 https://github.com/qMRLab/qMRLab.git;   \
     cd qMRLab; \
-    git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
+    git checkout b69168f02f0680471a0c5590114752c037c9b041; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
