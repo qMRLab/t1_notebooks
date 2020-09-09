@@ -61,7 +61,7 @@ RUN cd $HOME/work;\
                 dash_dangerously_set_inner_html \
                 dash-renderer \
                 flask; \
-    python -m sos_notebook.install;\
+    python -m sos_notebook.install; \
     git clone -b blog_afi https://github.com/qMRLab/t1_notebooks.git;  \
     cd t1_notebooks;\
     git clone -b update_2.5.0 https://github.com/qMRLab/qMRLab.git;   \
