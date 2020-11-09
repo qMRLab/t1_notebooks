@@ -51,13 +51,9 @@ RUN cd $HOME/work;\
                 sos-sas==0.9.12.3 \
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
+                sos-r==0.9.12.2 \
                 scipy \
-                plotly \
-                dash \
-                dash_core_components \
-                dash_html_components \
-                dash_dangerously_set_inner_html \
-                dash-renderer \
+                plotly==3.10.0 \
                 flask; \
     python -m sos_notebook.install;\
     git clone https://github.com/qMRLab/t1_notebooks.git;                             \
