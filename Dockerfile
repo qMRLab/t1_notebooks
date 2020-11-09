@@ -56,11 +56,11 @@ RUN cd $HOME/work;\
                 plotly==3.10.0 \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/qMRLab/t1_notebooks.git;                             \
+    git clone --single-branch -b master https://github.com/qMRLab/t1_notebooks.git;             \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
-    git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
+    git checkout 8e02921d99d9fc670439c63e4afcb329e9d091f0; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
