@@ -41,6 +41,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
+    pip install --upgrade pip; \
+    pip install --upgrade setuptools; \
+    pip install Cython>=0.29.28; \
+    pip install pyarrow>=0.4.0; \
     pip install octave_kernel \
                 sos==0.17.7 \
                 sos-notebook==0.17.2 \
@@ -49,8 +53,8 @@ RUN cd $HOME/work;\
                 sos-matlab==0.9.12.1 \
                 sos-ruby==0.9.15.0 \
                 sos-sas==0.9.12.3 \
-                sos-julia==0.9.12.1 \
-                sos-javascript==0.9.12.2 \
+                sos-julia==0.9.12.1  \
+                sos-javascript==0.9.12.2  \
                 sos-r==0.9.12.2 \
                 scipy \
                 plotly==3.10.0 \
