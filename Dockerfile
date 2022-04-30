@@ -51,7 +51,7 @@ RUN cd $HOME/work;\
                 sos-matlab==0.9.12.1 \
                 sos-ruby==0.9.15.0 \
                 sos-sas==0.9.12.3 \
-                sos-julia==0.9.12.1 \
+                sos-julia==0.9.12.1  \
                 sos-javascript==0.9.12.2  \
                 sos-r==0.9.12.2 \
                 scipy \
