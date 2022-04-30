@@ -41,6 +41,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
+    pip install --upgrade pip; \
     pip install --upgrade setuptools; \
     pip install Cython>=0.29.28; \
     pip install pyarrow>=0.4.0; \
