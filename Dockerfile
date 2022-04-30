@@ -41,7 +41,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
-    pip install Cython=0.29.28; \
+    pip install Cython>=0.29.28; \
     pip install pyarrow>=0.4.0; \
     pip install octave_kernel \
                 sos==0.17.7 \
