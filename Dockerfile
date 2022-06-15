@@ -65,7 +65,7 @@ RUN cd $HOME/work;\
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
-    git checkout d15a553f9d93457c3ed59861380852c54458c2b4; \
+    git checkout 05e1e62c7460fbf9c62c86c1ce6b76f98ed29121; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
