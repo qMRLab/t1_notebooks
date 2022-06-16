@@ -41,10 +41,14 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
+    pip install --upgrade pip; \
+    pip install --upgrade setuptools; \
+    pip install Cython>=0.29.28; \
+    pip install pyarrow>=0.4.0; \
     pip install octave_kernel \
-                sos==0.19.8 \
+                sos==0.17.7 \
                 sos-r \
-                sos-notebook==0.19.4 \
+                sos-notebook==0.17.2 \
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
                 sos-matlab==0.9.12.1 \
@@ -52,21 +56,16 @@ RUN cd $HOME/work;\
                 sos-sas==0.9.12.3 \
                 sos-julia==0.9.12.1 \
                 sos-javascript==0.9.12.2 \
+                sos-r==0.9.12.2 \
                 scipy \
-                matplotlib \
                 plotly==3.10.0 \
-                dash \
-                dash_core_components \
-                dash_html_components \
-                dash_dangerously_set_inner_html \
-                dash-renderer \
                 flask; \
     python -m sos_notebook.install; \
-    git clone -b blog_afi https://github.com/qMRLab/t1_notebooks.git;  \
+    git clone --single-branch -b blog_afi https://github.com/qMRLab/t1_notebooks.git;  \
     cd t1_notebooks;\
-    git clone -b update_2.5.0 https://github.com/qMRLab/qMRLab.git;   \
+    git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
-    git checkout e43f345261d1a21496d0cf0d6285b4120001de39; \
+    git checkout 05e1e62c7460fbf9c62c86c1ce6b76f98ed29121; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
