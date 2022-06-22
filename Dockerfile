@@ -20,7 +20,7 @@ RUN apt-get update && \
         wget \
         gfortran \
         cmake \
-        bsdtar  \
+        bsdtar \
         rsync \
         imagemagick \
         gnuplot-x11 \
