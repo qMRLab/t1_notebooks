@@ -65,7 +65,7 @@ RUN cd $HOME/work;\
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
-    git checkout 05e1e62c7460fbf9c62c86c1ce6b76f98ed29121; \
+    git checkout mb/afi_b1_filter_patch; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
