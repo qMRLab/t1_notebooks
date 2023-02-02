@@ -20,7 +20,7 @@ RUN apt-get update && \
         wget \
         gfortran \
         cmake \
-        bsdtar  \
+        bsdtar \
         rsync \
         imagemagick \
         gnuplot-x11 \
@@ -47,6 +47,7 @@ RUN cd $HOME/work;\
     pip install pyarrow>=0.4.0; \
     pip install octave_kernel \
                 sos==0.17.7 \
+                sos-r \
                 sos-notebook==0.17.2 \
                 sos-python==0.9.12.1 \
                 sos-bash==0.12.3 \
@@ -59,12 +60,12 @@ RUN cd $HOME/work;\
                 scipy \
                 plotly==3.10.0 \
                 flask; \
-    python -m sos_notebook.install;\
-    git clone --single-branch -b master https://github.com/qMRLab/t1_notebooks.git;                \
+    python -m sos_notebook.install; \
+    git clone --single-branch -b blog_afi https://github.com/qMRLab/t1_notebooks.git; \
     cd t1_notebooks;\
     git clone https://github.com/neuropoly/qMRLab.git;   \
     cd qMRLab; \
-    git checkout d15a553f9d93457c3ed59861380852c54458c2b4; \
+    git checkout mb/afi_b1_filter_patch; \
     cd ..; \
     chmod -R 777 $HOME/work/t1_notebooks; \
     octave --eval "cd qMRLab; \
