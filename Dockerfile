@@ -58,7 +58,7 @@ RUN cd $HOME/work;\
                 sos-javascript==0.9.12.2  \
                 sos-r==0.9.12.2 \
                 scipy \
-                plotly==3.10.0 \
+                plotly \
                 flask; \
     python -m sos_notebook.install; \
     git clone --single-branch -b blog_mtr https://github.com/qMRLab/t1_notebooks.git;  \
