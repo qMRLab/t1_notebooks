@@ -63,7 +63,7 @@ RUN cd $HOME/work;\
     python -m sos_notebook.install; \
     git clone --single-branch -b blog_mtr https://github.com/qMRLab/t1_notebooks.git;  \
     cd t1_notebooks;\
-    git clone https://github.com/neuropoly/qMRLab.git;   \
+    git clone https://github.com/neuropoly/qMRLab.git;    \
     cd qMRLab; \
     git checkout mb/qmt_ismrm; \
     cd ..; \
