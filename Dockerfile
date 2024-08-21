@@ -59,6 +59,7 @@ RUN cd $HOME/work;\
                 sos-r==0.9.12.2 \
                 scipy \
                 plotly \
+		nibabel \
                 flask; \
     python -m sos_notebook.install; \
     git clone --single-branch -b blog_mtr https://github.com/qMRLab/t1_notebooks.git;        \
